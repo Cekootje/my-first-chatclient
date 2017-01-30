@@ -1,0 +1,28 @@
+
+<md-toolbar color="primary">
+  My first chat client
+  <span class="app-toolbar-filler"></span>
+</md-toolbar>
+
+<div class="app-content">
+  <form>
+
+    <md-card>
+        <md-input #nickname placeholder="Nickname" maxlength="50" style="width: 100%">
+          <md-hint align="end">
+            {{nickname.characterCount}} / 50
+          </md-hint>
+        </md-input>
+   
+        <md-textarea #message placeholder="Message" maxlength="200" style="width: 100%">
+          <md-hint align="end">
+            {{message.characterCount}} / 200
+          </md-hint>
+        </md-textarea>
+    
+        <button md-raised-button md-tooltip="Press button to send!">SEND</button>
+    </md-card>
+
+  </form>
+</div>
+
